@@ -66,7 +66,7 @@ export default function Chatbot() {
     <div className="orbit-dot"></div>
 
     <Image
-      src="/images/person.png"
+      src="/images/Person.png"
       alt="VSSR AI"
       fill
       className="
@@ -102,7 +102,7 @@ export default function Chatbot() {
 <div className="flex items-center gap-3 mb-4">
 
   <Image
-    src="/images/person.png"
+    src="/images/Person.png"
     alt="VSSR AI"
     width={50}
     height={50}
