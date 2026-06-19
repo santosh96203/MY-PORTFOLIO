@@ -13,7 +13,7 @@ export default function About() {
 
           {/* AI */}
           <Image
-            src="/icons/ai.png"
+            src="/icons/ai-icon.png"
             alt="AI"
             width={80}
             height={80}
@@ -22,7 +22,7 @@ export default function About() {
 
           {/* Code */}
           <Image
-            src="/icons/code.png"
+            src="/icons/computer.png"
             alt="Code"
             width={80}
             height={80}
@@ -31,7 +31,7 @@ export default function About() {
 
           {/* Data */}
           <Image
-            src="/icons/data.png"
+            src="/icons/deep.png"
             alt="Data"
             width={80}
             height={80}
@@ -40,7 +40,7 @@ export default function About() {
 
           {/* Mobile */}
           <Image
-            src="/icons/mobile.png"
+            src="/icons/develop.png"
             alt="Mobile"
             width={80}
             height={80}
@@ -49,11 +49,18 @@ export default function About() {
 
           {/* Healthcare */}
           <Image
-            src="/icons/health.png"
+            src="/icons/health-icon.png"
             alt="Healthcare"
             width={80}
             height={80}
             className="absolute bottom-24 -right-8 float"
+          />
+          <Image
+            src="/icons/reseach.png"
+            alt="Research & Publications"
+            width={65}
+            height={65}
+            className="absolute -bottom-12 left-1/2 -translate-x-1/2 float delay-1200"
           />
 
           {/* Main Profile Image */}

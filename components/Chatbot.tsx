@@ -42,25 +42,42 @@ export default function Chatbot() {
     <>
       {/* Floating AI Avatar */}
       <button
-        onClick={() => setOpen(!open)}
-        className="fixed bottom-6 right-6 z-50 group"
-      >
-        <Image
-          src="/images/ai-avatar.jpg"
-          alt="Santosh AI"
-          width={75}
-          height={75}
-          className="
-            rounded-full
-            border-2
-            border-blue-500
-            shadow-[0_0_30px_rgba(59,130,246,0.9)]
-            transition-all
-            duration-300
-            group-hover:scale-110
-          "
-        />
-      </button>
+  onClick={() => setOpen(!open)}
+  className="
+  fixed
+  bottom-6
+  right-6
+  z-50
+  group
+  w-[85px]
+  h-[85px]
+"
+>
+  <div className="jarvis-container relative">
+
+    <div className="ring ring1"></div>
+
+    <div className="ring ring2"></div>
+
+    <div className="ring ring3"></div>
+
+    <div className="radar"></div>
+
+    <div className="orbit-dot"></div>
+
+    <Image
+      src="/images/person.png"
+      alt="VSSR AI"
+      fill
+      className="
+        rounded-full
+        object-cover
+        z-10
+      "
+    />
+
+  </div>
+</button>
 
       {/* Chat Window */}
       {open && (
@@ -76,35 +93,46 @@ export default function Chatbot() {
             border-blue-500/30
             bg-slate-900/80
             backdrop-blur-xl
-            shadow-[0_0_40px_rgba(59,130,246,0.25)]
+            shadow-[0_0_50px_#00e5ff,0_0_35px_rgba(0,229,255,.2)]
             p-5
             z-50
           "
         >
           {/* Header */}
-          <div className="flex items-center gap-3 mb-4">
-            <Image
-              src="/images/ai-avatar.jpg"
-              alt="AI"
-              width={45}
-              height={45}
-              className="rounded-full"
-            />
+<div className="flex items-center gap-3 mb-4">
 
-            <div>
-              <h3 className="font-bold text-white">
-                Santosh AI
-              </h3>
+  <Image
+    src="/images/person.png"
+    alt="VSSR AI"
+    width={50}
+    height={50}
+    className="
+      rounded-full
+      border
+      border-cyan-400
+    "
+  />
 
-              <p className="text-xs text-green-400">
-                ● Online
-              </p>
-            </div>
-          </div>
+  <div>
+    <h3 className="font-bold text-white">
+      VSSR AI Assistant
+    </h3>
+
+    <p className="text-cyan-400 text-xs">
+      Ask me anything
+    </p>
+
+    <p className="text-xs text-green-400">
+      ● Online
+    </p>
+  </div>
+
+</div>
 
           {/* Input */}
           <div className="mb-4 text-sm text-gray-300">
-            Ask Santosh AI about:
+            Hello, I'm VSSR AI.
+            I can answer questions about:
 
             <ul className="mt-2 space-y-1">
               <li>🎓 Education & CGPA</li>

@@ -1,3 +1,11 @@
+"use client";
+import { useState } from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+} from "react-icons/fa";
+
 export default function Projects() {
   const projects = [
     {
@@ -13,21 +21,41 @@ export default function Projects() {
         "Healthcare AI",
       ],
       icon: "❤️",
+      status: "M.Tech Major Project",
+      github: "https://github.com/santosh96203/Real-Time-Non-Contact-Pulse-Rate-and-SpO2-Monitoring-Using-Mobile-Cameras",
+      image: "/images/rppg-result.png",
     },
 
     {
+  title:
+    "Potential Application of Using Smartphone Sensor for Estimating Air Temperature",
+  description:
+    "Developed a mobile application to estimate ambient air temperature using smartphone battery sensor data and machine learning regression models for experimental validation and prediction.",
+  tech: [
+    "Python",
+    "Scikit-learn",
+    "Pandas",
+    "Android Sensors",
+    "Data Analytics",
+  ],
+  icon: "🌡️",
+  status: "B.Tech Project", 
+  github: "https://github.com/santosh96203/Potential-Application-of-Using-Smartphone-Sensor-for-Estimating-Air-Temperature",
+},
+
+    {
       title:
-        "A Review of Monitoring Heart Rate and Cardiac Rhythm by Video Photoplethysmography on Mobile Devices",
+        "End-to-End AI Chatbot",
       description:
-        "Comprehensive review paper covering smartphone-based VPG frameworks, machine learning models, signal processing pipelines, healthcare applications, challenges, and future research directions.",
+        "Built an intelligent AI chatbot using Generative AI, Natural Language Processing, and modern web technologies to provide contextual and interactive responses.",
       tech: [
-        "Research",
-        "Machine Learning",
-        "Signal Processing",
-        "Healthcare AI",
+        "Python",
+        "NLP",
+        "Gemini AI",
+        "Next.js",
       ],
-      icon: "📄",
-      paper: "/papers/review-paper.pdf",
+      icon: "🤖",
+      status: "Yoshops Internship",
     },
 
     {
@@ -42,20 +70,8 @@ export default function Projects() {
         "Deep Learning",
       ],
       icon: "😷",
-    },
-
-    {
-      title:
-        "End-to-End AI Chatbot",
-      description:
-        "Built an intelligent AI chatbot using Generative AI, Natural Language Processing, and modern web technologies to provide contextual and interactive responses.",
-      tech: [
-        "Python",
-        "NLP",
-        "Gemini AI",
-        "Next.js",
-      ],
-      icon: "🤖",
+      status: "Indian Servers Internship", 
+      github: "https://github.com/santosh96203/Face-Mask-Detection-Using-CNN",
     },
   ];
 
@@ -66,17 +82,18 @@ export default function Projects() {
     >
       <div className="text-center mb-16">
         <p className="text-blue-400 mb-3 font-medium">
-          MY WORK
-        </p>
+  FEATURED PROJECTS
+</p>
 
-        <h2 className="text-5xl font-bold">
-          Featured Projects
-        </h2>
+<h2 className="text-5xl font-bold">
+  AI & Software Projects
+</h2>
 
         <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-          AI, Machine Learning, Healthcare Monitoring,
-          Computer Vision, and Full Stack Development projects.
-        </p>
+  Research-driven projects spanning Artificial Intelligence,
+  Healthcare Technology, Computer Vision,
+  Mobile Sensing, and Intelligent Systems.
+</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8">
@@ -98,53 +115,77 @@ export default function Projects() {
             "
           >
             <div className="text-5xl mb-5">
-              {project.icon}
-            </div>
+  {project.icon}
+</div>
 
-            <h3 className="text-2xl font-bold mb-4">
-              {project.title}
-            </h3>
+<div
+  className="
+    inline-block
+    px-3
+    py-1
+    mb-4
+    rounded-full
+    text-xs
+    bg-cyan-500/10
+    border
+    border-cyan-500/30
+    text-cyan-400
+  "
+>
+  {project.status}
+</div>
+
+<h3 className="text-2xl font-bold mb-4">
+  {project.title}
+</h3>
 
             <p className="text-gray-400 mb-6">
               {project.description}
             </p>
 
             <div className="flex flex-wrap gap-2 mb-5">
-              {project.tech.map((tech, i) => (
-                <span
-                  key={i}
-                  className="
-                    bg-blue-500/10
-                    text-blue-400
-                    px-3
-                    py-1
-                    rounded-full
-                    text-sm
-                    border
-                    border-blue-500/20
-                  "
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+  {project.tech.map((tech, i) => (
+    <span
+      key={i}
+      className="
+        bg-blue-500/10
+        text-blue-400
+        px-3
+        py-1
+        rounded-full
+        text-sm
+        border
+        border-blue-500/20
+      "
+    >
+      {tech}
+    </span>
+  ))}
+</div>
 
-            {"paper" in project && (
-              <a
-                href={project.paper}
-                target="_blank"
-                className="
-                  inline-flex
-                  items-center
-                  gap-2
-                  text-blue-400
-                  hover:text-blue-300
-                  font-medium
-                "
-              >
-                View Review Paper →
-              </a>
-            )}
+{project.github && (
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      inline-flex
+      items-center
+      gap-2
+      px-4
+      py-2
+      mt-4
+      rounded-xl
+      border
+      border-slate-600
+      hover:border-cyan-400
+      hover:text-cyan-400
+      transition
+    "
+  >
+    <FaGithub />
+  </a>
+)}
           </div>
         ))}
       </div>
