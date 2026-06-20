@@ -94,7 +94,7 @@ export default function Navbar() {
   <div className="flex items-center gap-3">
 
     <button
-      onClick={() => setMenuOpen(true)}
+      onClick={() => setMenuOpen((prev) => !prev)}
       className="
         md:hidden
         flex
@@ -145,6 +145,11 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
+         <>
+    <div
+      className="fixed inset-0 z-40"
+      onClick={() => setMenuOpen(false)}
+    />
         <div
           className="
             fixed
@@ -199,28 +204,36 @@ shadow-[0_0_10px_#00e5ff]
 
           <div className="flex flex-col mt-4">
 
-            <a href="#about" className="
+            <a href="#about" 
+            onClick={() => setMenuOpen(false)}
+            className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
               About
             </a>
-            <a href="#research" className="
+            <a href="#research" 
+            onClick={() => setMenuOpen(false)}
+            className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]">
     Research Focus
   </a>
 
-            <a href="#skills" className="
+            <a href="#skills" 
+            onClick={() => setMenuOpen(false)}
+            className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
               Skills & Technology
             </a>
-            <a href="#experience" className="
+            <a href="#experience" 
+            onClick={() => setMenuOpen(false)}
+            className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -228,7 +241,9 @@ shadow-[0_0_10px_#00e5ff]
   Internships & Experience
 </a>
 
-            <a href="#projects" className="
+            <a href="#projects" 
+            onClick={() => setMenuOpen(false)}
+            className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -236,7 +251,9 @@ shadow-[0_0_10px_#00e5ff]
               Projects
             </a>
 
-            <a href="#publications" className="
+            <a href="#publications" 
+            onClick={() => setMenuOpen(false)}
+            className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -244,7 +261,9 @@ shadow-[0_0_10px_#00e5ff]
               Publications
             </a>
 
-            <a href="#contact" className="
+            <a href="#contact" 
+            onClick={() => setMenuOpen(false)}
+            className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -254,6 +273,7 @@ shadow-[0_0_10px_#00e5ff]
 
           </div>
         </div>
+      </>
       )}
     </>
   );
