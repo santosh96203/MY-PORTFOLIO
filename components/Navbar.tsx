@@ -47,10 +47,7 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between">
 
-          {/* Left Side */}
-         <div className="flex items-center gap-3">
-
-  {/* Desktop Name */}
+  {/* Left */}
   <span
     className="
       font-bold
@@ -62,67 +59,7 @@ export default function Navbar() {
     Santhosh
   </span>
 
-  {/* Mobile Avatar + Menu */}
-  <button
-    onClick={() => setMenuOpen(!menuOpen)}
-    className="
-      md:hidden
-
-      flex
-      items-center
-      gap-2
-
-      px-2
-      py-1
-
-      rounded-full
-
-      border
-      border-cyan-500/20
-
-      bg-white/5
-      backdrop-blur-md
-
-      hover:bg-cyan-500/10
-      transition
-    "
-  >
-    <Image
-      src="/images/avatar.jpg"
-      alt="Avatar"
-      width={36}
-      height={36}
-      className="
-        rounded-full
-        border-2
-        border-cyan-400
-        shadow-[0_0_12px_rgba(6,182,212,.6)]
-      "
-    />
-
-    <HiOutlineBars3 className="text-xl" />
-  </button>
-
-  {/* Desktop Avatar */}
-  <Image
-    src="/images/avatar.jpg"
-    alt="Avatar"
-    width={45}
-    height={45}
-    className="
-      hidden
-      md:block
-
-      rounded-full
-      border-2
-      border-cyan-400
-      shadow-[0_0_15px_rgba(6,182,212,.6)]
-    "
-  />
-
-</div>
-
-          {/* Desktop Navigation */}
+ {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
 
             <a href="#about" className="hover:text-blue-400 transition">
@@ -151,35 +88,59 @@ export default function Navbar() {
             <a href="#contact" className="hover:text-blue-400 transition">
               Contact
             </a>
+  </div>
 
-          </div>
+  {/* Mobile + Theme */}
+  <div className="flex items-center gap-3">
 
-          {/* Theme Toggle */}
-          {mounted && (
-            <button
-              onClick={() =>
-                setTheme(theme === "dark" ? "light" : "dark")
-              }
-              className="
-                p-2
-                rounded-full
+    <button
+      onClick={() => setMenuOpen(true)}
+      className="
+        md:hidden
+        flex
+        items-center
+        gap-2
+        px-3
+        py-2
+        rounded-full
+        bg-slate-800/80
+        border
+        border-cyan-500/30
+      "
+    >
+      <Image
+        src="/images/profile1.jpg"
+        alt="Menu"
+        width={36}
+        height={36}
+        className="rounded-full"
+      />
+      <HiOutlineBars3 className="text-white text-xl" />
+    </button>
 
-                border
-                border-blue-500/20
+    {mounted && (
+      <button
+        onClick={() =>
+          setTheme(theme === "dark" ? "light" : "dark")
+        }
+        className="
+          p-2
+          rounded-full
+          border
+          border-blue-500/20
+          hover:bg-blue-500/10
+          transition
+        "
+      >
+        {theme === "dark"
+          ? <Sun size={18} />
+          : <Moon size={18} />}
+      </button>
+    )}
 
-                hover:bg-blue-500/10
-                transition
-              "
-            >
-              {theme === "dark" ? (
-                <Sun size={18} />
-              ) : (
-                <Moon size={18} />
-              )}
-            </button>
-          )}
+  </div>
 
-        </div>
+</div>
       </nav>
 
       {/* Mobile Dropdown */}

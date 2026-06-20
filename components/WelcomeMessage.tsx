@@ -12,7 +12,7 @@ export default function WelcomeMessage({
 
   const [message, setMessage] =
     useState("");
-
+  
   const [glowColor, setGlowColor] =
     useState("#ffffff");
 
@@ -23,20 +23,21 @@ export default function WelcomeMessage({
       "Welcome. Explore research, engineering projects, publications, and technical expertise.";
 
     if (hour >= 5 && hour < 12) {
-      setGreeting("Good Morning ☀️");
-      setGlowColor("#FFD54F");
-    } else if (
-      hour >= 12 &&
-      hour < 18
-    ) {
-      setGreeting(
-        "Good Afternoon 🌤️"
-      );
-      setGlowColor("#FFB300");
-    } else {
-      setGreeting("Good Evening 🌙");
-      setGlowColor("#93C5FD");
-    }
+  setGreeting("Good Morning ☀️");
+  setGlowColor("#FFD54F"); // Morning yellow
+
+} else if (hour >= 12 && hour < 17) {
+  setGreeting("Good Afternoon 🌤️");
+  setGlowColor("#FFB300"); // Afternoon gold
+
+} else if (hour >= 17 && hour < 21) {
+  setGreeting("Good Evening 🌇");
+  setGlowColor("#FF7043"); // Sunset orange
+
+} else {
+  setGreeting("Good Night 🌙");
+  setGlowColor("#FFFFFF"); // White moonlight
+}
 
     setMessage(commonMessage);
   }, []);
@@ -48,6 +49,10 @@ export default function WelcomeMessage({
 
     return () => clearTimeout(timer);
   }, [onFinish]);
+  const textColor =
+  glowColor === "#FFFFFF"
+    ? "#F8FAFC"
+    : glowColor;
 
   return (
     <div
@@ -86,13 +91,13 @@ export default function WelcomeMessage({
           mb-4
           "
           style={{
-            color: glowColor,
-            textShadow: `
-              0 0 10px ${glowColor},
-              0 0 20px ${glowColor},
-              0 0 40px ${glowColor}
-            `,
-          }}
+  color: textColor,
+  textShadow: `
+    0 0 10px ${glowColor},
+    0 0 20px ${glowColor},
+    0 0 40px ${glowColor}
+  `,
+}}
         >
           {greeting}
         </h1>

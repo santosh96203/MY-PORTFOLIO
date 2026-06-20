@@ -100,6 +100,17 @@ inputRef.current?.focus();
 }
 };
 useEffect(() => {
+  if (open) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [open]);
+useEffect(() => {
   const container = chatContainerRef.current;
 
   if (!container) return;
@@ -526,14 +537,13 @@ messagesEndRef.current?.scrollIntoView({
           {/* Chat Messages */}
 <div
   ref={chatContainerRef}
+  onWheel={(e) => e.stopPropagation()}
+  onTouchMove={(e) => e.stopPropagation()}
   className="
-  flex-1
-  overflow-y-auto
-  space-y-4
-  mt-4
-  mb-4
-  pr-2
-"
+    flex-1
+    overflow-y-auto
+    overscroll-contain
+  "
 >
 
   {messages.map((msg, index) => (
