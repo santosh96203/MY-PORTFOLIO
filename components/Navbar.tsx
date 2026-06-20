@@ -13,6 +13,17 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+  if (menuOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [menuOpen]);
+  useEffect(() => {
     setMounted(true);
   }, []);
 
@@ -147,33 +158,25 @@ export default function Navbar() {
       {menuOpen && (
          <>
     <div
-      className="fixed inset-0 z-40"
+      className="fixed inset-0 z-40 bg-black/40 z-40 md:hidden"
       onClick={() => setMenuOpen(false)}
     />
         <div
           className="
-            fixed
-            top-24
-            left-4
-
-            w-72
-
-            rounded-3xl
-
-            bg-slate-900/95
-            backdrop-blur-xl
-
-            border
-            border-cyan-500/20
-
-            shadow-[0_0_30px_rgba(6,182,212,.15)]
-
-            p-5
-
-            md:hidden
-
-            z-50
-          "
+        fixed
+        top-24
+        left-4
+        w-72
+        rounded-3xl
+        bg-slate-900/95
+        backdrop-blur-xl
+        border
+        border-cyan-500/20
+        shadow-[0_0_30px_rgba(6,182,212,.15)]
+        p-5
+        md:hidden
+        z-50
+      "
         >
           <div className="flex items-center gap-4 pb-4 border-b border-cyan-500/20">
 
