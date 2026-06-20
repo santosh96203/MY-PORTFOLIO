@@ -109,7 +109,7 @@ export default function Navbar() {
       "
     >
       <Image
-        src="/images/profile1.jpg"
+        src="/images/avatar.jpg"
         alt="Menu"
         width={36}
         height={36}
@@ -206,7 +206,7 @@ shadow-[0_0_10px_#00e5ff]
 ">
               About
             </a>
-            <a href="#Research" className="
+            <a href="#research" className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]">
@@ -220,7 +220,7 @@ shadow-[0_0_10px_#00e5ff]
 ">
               Skills & Technology
             </a>
-            <a href="#Experience" className="
+            <a href="#experience" className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
