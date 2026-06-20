@@ -1,6 +1,8 @@
 export default function Research() {
   return (
-    <section className="max-w-6xl mx-auto px-8 py-20">
+    <section 
+    id="research"
+    className="max-w-6xl mx-auto px-8 py-20">
       <h2 className="text-4xl font-bold mb-8">
         Research Focus
       </h2>

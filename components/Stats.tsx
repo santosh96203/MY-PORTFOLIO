@@ -3,7 +3,7 @@ export default function Stats() {
     { value: "7.41", label: "M.Tech CGPA" },
     { value: "4", label: "Major Projects" },
     { value: "1", label: "Published Paper" },
-    { value: "3", label: "Research Works" },
+    { value: "2+", label: "Research Works" },
     { value: "10+", label: "Certifications" },
   ];
 

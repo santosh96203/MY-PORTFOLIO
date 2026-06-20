@@ -14,26 +14,46 @@ import Navbar from "@/components/Navbar";
 import Experience from "@/components/Experience";
 import { useState } from "react";
 import SplashScreen from "@/components/SplashScreen";
-
-
+import FadeIn from "@/components/FadeIn";
+import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-
 import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
 } from "react-icons/fa";
+import WelcomeMessage from "@/components/WelcomeMessage";
+
+
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] =
+  useState(true);
+
+const [showWelcome, setShowWelcome] =
+  useState(false);
 
 if (loading) {
   return (
     <SplashScreen
-      onFinish={() => setLoading(false)}
+      onFinish={() => {
+        setLoading(false);
+        setShowWelcome(true);
+      }}
     />
   );
 }
+
+if (showWelcome) {
+  return (
+    <WelcomeMessage
+      onFinish={() =>
+        setShowWelcome(false)
+      }
+    />
+  );
+}
+
   return (
   <div className="fade-home">
     <Navbar />
@@ -47,7 +67,12 @@ if (loading) {
       </div>
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-8 py-24 flex flex-col lg:flex-row items-center gap-16">
+      <motion.section
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  className="max-w-7xl mx-auto px-8 py-24 flex flex-col lg:flex-row items-center gap-16"
+>
 
         {/* Left Side */}
         <div className="flex-1">
@@ -299,16 +324,39 @@ and intelligent software systems.
   </div>
 </div>
 
-      </section>
+      </motion.section>
 
-            <Stats />
-      <About />
-      <Research />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Publications />
-      <Contact />
+           <FadeIn>
+  <Stats />
+</FadeIn>
+
+<FadeIn>
+  <About />
+</FadeIn>
+
+<FadeIn>
+  <Research />
+</FadeIn>
+
+<FadeIn>
+  <Skills />
+</FadeIn>
+
+<FadeIn>
+  <Experience />
+</FadeIn>
+
+<FadeIn>
+  <Projects />
+</FadeIn>
+
+<FadeIn>
+  <Publications />
+</FadeIn>
+
+<FadeIn>
+  <Contact />
+</FadeIn>
       <Chatbot />
       <Footer />
 

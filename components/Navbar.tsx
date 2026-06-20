@@ -48,63 +48,79 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
 
           {/* Left Side */}
-          <div className="flex items-center gap-3">
+         <div className="flex items-center gap-3">
 
-            <Image
-              src="/images/avatar.jpg"
-              alt="AI Avatar"
-              width={45}
-              height={45}
-              className="
-                rounded-full
-                border-2
-                border-cyan-400
-                shadow-[0_0_15px_rgba(6,182,212,.6)]
-              "
-            />
+  {/* Desktop Name */}
+  <span
+    className="
+      font-bold
+      text-lg
+      text-slate-900
+      dark:text-white
+    "
+  >
+    Santhosh
+  </span>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="
-                md:hidden
+  {/* Mobile Avatar + Menu */}
+  <button
+    onClick={() => setMenuOpen(!menuOpen)}
+    className="
+      md:hidden
 
-                w-10
-                h-10
+      flex
+      items-center
+      gap-2
 
-                rounded-full
+      px-2
+      py-1
 
-                border
-                border-cyan-500/20
+      rounded-full
 
-                flex
-                items-center
-                justify-center
+      border
+      border-cyan-500/20
 
-                hover:bg-cyan-500/10
-                transition
-              "
-            >
-              <HiOutlineBars3 className="text-xl" />
-            </button>
+      bg-white/5
+      backdrop-blur-md
 
-            {/* Desktop Name */}
-            <span
-              className="
-                hidden
-                md:block
+      hover:bg-cyan-500/10
+      transition
+    "
+  >
+    <Image
+      src="/images/avatar.jpg"
+      alt="Avatar"
+      width={36}
+      height={36}
+      className="
+        rounded-full
+        border-2
+        border-cyan-400
+        shadow-[0_0_12px_rgba(6,182,212,.6)]
+      "
+    />
 
-                font-bold
-                text-lg
+    <HiOutlineBars3 className="text-xl" />
+  </button>
 
-                text-slate-900
-                dark:text-white
-              "
-            >
-              Santhosh
-            </span>
+  {/* Desktop Avatar */}
+  <Image
+    src="/images/avatar.jpg"
+    alt="Avatar"
+    width={45}
+    height={45}
+    className="
+      hidden
+      md:block
 
-          </div>
+      rounded-full
+      border-2
+      border-cyan-400
+      shadow-[0_0_15px_rgba(6,182,212,.6)]
+    "
+  />
+
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -113,8 +129,15 @@ export default function Navbar() {
               About
             </a>
 
+            <a href="#research" className="hover:text-blue-400 transition">
+              Research Focus
+            </a>
             <a href="#skills" className="hover:text-blue-400 transition">
-              Skills
+              Skills & Technologies
+            </a>
+
+            <a href="#experience" className="hover:text-blue-400 transition">
+              Internships & Experience
             </a>
 
             <a href="#projects" className="hover:text-blue-400 transition">
@@ -222,14 +245,27 @@ shadow-[0_0_10px_#00e5ff]
 ">
               About
             </a>
+            <a href="#Research" className="
+  hover:text-cyan-400
+  transition
+  hover:drop-shadow-[0_0_10px_#00e5ff]">
+    Research Focus
+  </a>
 
             <a href="#skills" className="
   hover:text-cyan-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
-              Skills
+              Skills & Technology
             </a>
+            <a href="#Experience" className="
+  hover:text-cyan-400
+  transition
+  hover:drop-shadow-[0_0_10px_#00e5ff]
+">
+  Internships & Experience
+</a>
 
             <a href="#projects" className="
   hover:text-cyan-400

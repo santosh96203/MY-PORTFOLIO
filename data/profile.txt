@@ -1,4 +1,4 @@
-Name: Veeravalli Shanmukha Santosh Rao
+Name: Veeravalli Shanmukha Santhosh Rao
 
 Email: [vssrsantosh@gmail.com](mailto:vssrsantosh@gmail.com)
 Phone: +91-7993667952
@@ -11,31 +11,36 @@ GitHub:
 https://github.com/santosh96203
 
 Career Objective:
-Motivated M.Tech Computer Engineering candidate with strong foundations in Software Development, Machine Learning, Artificial Intelligence, and problem-solving. Experienced in building real-world applications through internships, research projects, and academic work. Passionate about learning new technologies and contributing to innovative software and AI solutions.
+Motivated M.Tech Computer Engineering graduate with strong foundations in Software Development, Machine Learning, Artificial Intelligence, and problem-solving.
 
 Profile Summary:
-M.Tech Computer Engineering student with hands-on experience in Machine Learning, Full Stack Development, Data Science, Computer Vision, and Artificial Intelligence. Experienced in developing healthcare monitoring systems, AI chatbots, web applications, and research projects. Skilled in Python, Java, React.js, Node.js, TensorFlow, and modern software development technologies.
-
+M.Tech Computer Engineering graduate with hands-on experience in Machine Learning, Artificial Intelligence, Computer Vision, Data Science, and Full Stack Development. Experienced in developing healthcare monitoring systems, AI-powered applications, intelligent software solutions, and research-driven projects.
+Current Status:
+M.Tech Computer Engineering graduate actively seeking opportunities in Artificial Intelligence, Machine Learning, Software Development, Computer Vision, and Full Stack Development.
 Education Details:
 
 M.Tech (Computer Engineering)
 University: Parul University
 CGPA: 7.41
+Status: Completed
 Year: 2026
 
 B.Tech (Computer Science and Engineering)
 College: R.V.R. & J.C. College of Engineering
 CGPA: 6.93
+Status: Completed
 Year: 2024
 
 Intermediate (MPC)
 College: Narayana Junior College
 CGPA: 8.25
+Status: Completed
 Year: 2020
 
 SSC
 School: Sri Venkateswara Bala Kuteer
 CGPA: 5.8
+Status: Completed
 Year: 2018
 
 Experience:
@@ -250,24 +255,24 @@ Research Interests:
 
 Frequently Asked Questions:
 
-Q: What is Santosh's M.Tech CGPA?
+Q: What is Santhosh's M.Tech CGPA?
 A: 7.41
 
-Q: What is Santosh's B.Tech CGPA?
+Q: What is Santhosh's B.Tech CGPA?
 A: 6.93
 
-Q: What is Santosh's specialization?
+Q: What is Santhosh's specialization?
 A: Computer Engineering.
 
-Q: What are Santosh's major projects?
+Q: What are Santhosh's major projects?
 A: Pulse Rate & SpO₂ Monitoring System, End-to-End AI Chatbot, Face Mask Detection, and Smartphone Sensor-Based Air Temperature Estimation.
 
-Q: What are Santosh's research interests?
+Q: What are Santhosh's research interests?
 A: AI, Machine Learning, Deep Learning, Computer Vision, Healthcare AI, and Signal Processing.
 
-Q: Does Santosh have research publications?
-A: Yes. Publication include work on A Review of Monitoring Heart Rate and Cardiac Rhythm by Video Photoplethysmography on Mobile Devices.
-Q: What are Santosh's academic qualifications?
+Q: Does Santhosh have research publications?
+A: Yes. Publications include work on A Review of Monitoring Heart Rate and Cardiac Rhythm by Video Photoplethysmography on Mobile Devices.
+Q: What are Santhosh's academic qualifications?
 
 A:
 M.Tech (Computer Engineering) - CGPA 7.41
@@ -275,8 +280,32 @@ B.Tech (Computer Science and Engineering) - CGPA 6.93
 Intermediate (MPC) - CGPA 8.25
 SSC - CGPA 5.8
 
-Q: What is Santosh's Intermediate CGPA?
+Q: What is Santhosh's Intermediate CGPA?
 A: 8.25
 
-Q: What is Santosh's SSC CGPA?
+Q: What is Santhosh's SSC CGPA?
 A: 5.8
+Q: Has Santhosh completed his M.Tech?
+
+A: Yes. Santhosh completed his M.Tech in Computer Engineering from Parul University in 2026 with a CGPA of 7.41.
+Q: Who are you?
+
+A: I am VSSR, the AI Portfolio Assistant of Veeravalli Shanmukha Santhosh Rao. I can help you explore his education, projects, internships, publications, technical skills, certifications, research work, and professional achievements.
+Q: Is Santhosh available for full-time opportunities?
+
+A: Yes. Santhosh is actively seeking full-time opportunities in Artificial Intelligence, Machine Learning, Software Development, Computer Vision, and Full Stack Development.
+Q: How can I contact Santosh?
+
+A:
+Email: vssrsantosh@gmail.com
+Phone: +91-7993667952
+LinkedIn: https://www.linkedin.com/in/veeravalli-shanmukha-santhosh-rao-a2b054208/
+Q: When did Santhosh complete his M.Tech?
+
+A: Santhosh completed his M.Tech in Computer Engineering from Parul University in 2026 with a CGPA of 7.41.
+Q: Can I download Santhosh's resume?
+
+A: Yes. You can download Santhosh's resume from the Resume section of this portfolio website.
+Q: Can I download Santhosh's resume?
+
+A: Yes. Santhosh's resume is available for download from the Resume button on this portfolio website.

@@ -81,32 +81,44 @@ export default function About() {
         {/* Right Side */}
         <div
           className="
-          bg-slate-900/60
-          backdrop-blur-lg
-          border border-slate-700
-          rounded-3xl
-          p-8
-          hover:border-blue-500
-          hover:shadow-[0_0_25px_rgba(59,130,246,0.3)]
-          transition-all duration-300
-          "
+bg-white/95
+dark:bg-slate-900/60
+
+backdrop-blur-lg
+
+border
+border-slate-200
+dark:border-slate-700
+
+rounded-3xl
+p-8
+
+shadow-[0_8px_30px_rgba(0,0,0,0.08)]
+
+hover:border-blue-500
+hover:-translate-y-1
+hover:shadow-[0_12px_40px_rgba(59,130,246,0.15)]
+
+transition-all
+duration-300
+"
         >
           <p className="text-blue-400 font-medium mb-3">
             ABOUT ME
           </p>
 
-          <h2 className="text-5xl font-bold mb-8">
+          <h2 className="text-5xl font-bold text-slate-900 dark:text-white mb-8">
             AI Engineer & Researcher
           </h2>
 
-          <p className="text-gray-400 leading-8 text-lg">
+          <p className="text-slate-700 dark:text-slate-300 leading-8 text-lg">
             Motivated M.Tech Computer Engineering student with
             expertise in Machine Learning, Deep Learning,
             Computer Vision, Full Stack Development,
             Data Science, and Artificial Intelligence.
           </p>
 
-          <p className="text-gray-400 leading-8 text-lg mt-6">
+          <p className="text-slate-700 dark:text-slate-300 leading-8 text-lg mt-6">
             Passionate about building innovative AI-powered
             healthcare systems, intelligent software solutions,
             and research-driven applications that solve
@@ -115,43 +127,75 @@ export default function About() {
 
           <div className="grid grid-cols-2 gap-4 mt-10">
 
-            <div className="bg-slate-900/60 border border-slate-700 rounded-2xl p-4">
-              <h3 className="font-bold text-xl text-blue-400">
-                7.41
-              </h3>
-              <p className="text-gray-400">
-                M.Tech CGPA
-              </p>
-            </div>
+  <div className="
+    bg-slate-50
+    dark:bg-slate-900/60
+    border
+    border-slate-200
+    dark:border-slate-700
+    rounded-2xl
+    p-4
+  ">
+    <h3 className="font-bold text-xl text-blue-600 dark:text-blue-400">
+      🎓 2026
+    </h3>
+    <p className="text-slate-600 dark:text-slate-400">
+      Graduated 
+    </p>
+  </div>
 
-            <div className="bg-slate-900/60 border border-slate-700 rounded-2xl p-4">
-              <h3 className="font-bold text-xl text-blue-400">
-                AI & ML
-              </h3>
-              <p className="text-gray-400">
-                Specialization
-              </p>
-            </div>
+  <div className="
+    bg-slate-50
+    dark:bg-slate-900/60
+    border
+    border-slate-200
+    dark:border-slate-700
+    rounded-2xl
+    p-4
+  ">
+    <h3 className="font-bold text-xl text-blue-600 dark:text-blue-400">
+      📄 1
+    </h3>
+    <p className="text-slate-600 dark:text-slate-400">
+      Publication
+    </p>
+  </div>
 
-            <div className="bg-slate-900/60 border border-slate-700 rounded-2xl p-4">
-              <h3 className="font-bold text-xl text-blue-400">
-                4+
-              </h3>
-              <p className="text-gray-400">
-                Major Projects
-              </p>
-            </div>
+  <div className="
+    bg-slate-50
+    dark:bg-slate-900/60
+    border
+    border-slate-200
+    dark:border-slate-700
+    rounded-2xl
+    p-4
+  ">
+    <h3 className="font-bold text-xl text-blue-600 dark:text-blue-400">
+      💼 3
+    </h3>
+    <p className="text-slate-600 dark:text-slate-400">
+      Internships
+    </p>
+  </div>
 
-            <div className="bg-slate-900/60 border border-slate-700 rounded-2xl p-4">
-              <h3 className="font-bold text-xl text-blue-400">
-                2026
-              </h3>
-              <p className="text-gray-400">
-                Graduation
-              </p>
-            </div>
+  <div className="
+    bg-slate-50
+    dark:bg-slate-900/60
+    border
+    border-slate-200
+    dark:border-slate-700
+    rounded-2xl
+    p-4
+  ">
+    <h3 className="font-bold text-xl text-blue-600 dark:text-blue-400">
+      🚀 4+
+    </h3>
+    <p className="text-slate-600 dark:text-slate-400">
+      Projects
+    </p>
+  </div>
 
-          </div>
+</div>
         </div>
 
       </div>

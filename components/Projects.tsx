@@ -85,11 +85,11 @@ export default function Projects() {
   FEATURED PROJECTS
 </p>
 
-<h2 className="text-5xl font-bold">
+<h2 className="text-5xl font-bold text-slate-900 dark:text-white">
   AI & Software Projects
 </h2>
 
-        <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+        <p className="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">
   Research-driven projects spanning Artificial Intelligence,
   Healthcare Technology, Computer Vision,
   Mobile Sensing, and Intelligent Systems.
@@ -101,18 +101,27 @@ export default function Projects() {
           <div
             key={index}
             className="
-              bg-slate-900/60
-              backdrop-blur-lg
-              border
-              border-slate-700
-              rounded-3xl
-              p-8
-              hover:-translate-y-3
-              hover:border-blue-500
-              hover:shadow-[0_0_35px_rgba(59,130,246,0.25)]
-              transition-all
-              duration-300
-            "
+  bg-white/95
+  dark:bg-slate-900/60
+
+  backdrop-blur-lg
+
+  border
+  border-slate-200
+  dark:border-slate-700
+
+  rounded-3xl
+  p-8
+
+  shadow-[0_8px_30px_rgba(0,0,0,0.08)]
+
+  hover:-translate-y-2
+  hover:border-blue-500
+  hover:shadow-[0_12px_40px_rgba(59,130,246,0.15)]
+
+  transition-all
+  duration-300
+"
           >
             <div className="text-5xl mb-5">
   {project.icon}
@@ -120,26 +129,32 @@ export default function Projects() {
 
 <div
   className="
-    inline-block
-    px-3
-    py-1
-    mb-4
-    rounded-full
-    text-xs
-    bg-cyan-500/10
-    border
-    border-cyan-500/30
-    text-cyan-400
-  "
+  inline-block
+  px-3
+  py-1
+  mb-4
+  rounded-full
+  text-xs
+
+  bg-cyan-50
+  dark:bg-cyan-500/10
+
+  border
+  border-cyan-100
+  dark:border-cyan-500/30
+
+  text-cyan-700
+  dark:text-cyan-400
+"
 >
   {project.status}
 </div>
 
-<h3 className="text-2xl font-bold mb-4">
+<h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
   {project.title}
 </h3>
 
-            <p className="text-gray-400 mb-6">
+            <p className="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
               {project.description}
             </p>
 
@@ -148,15 +163,22 @@ export default function Projects() {
     <span
       key={i}
       className="
-        bg-blue-500/10
-        text-blue-400
-        px-3
-        py-1
-        rounded-full
-        text-sm
-        border
-        border-blue-500/20
-      "
+  bg-blue-50
+  dark:bg-blue-500/10
+
+  text-blue-700
+  dark:text-blue-400
+
+  px-3
+  py-1
+
+  rounded-full
+  text-sm
+
+  border
+  border-blue-100
+  dark:border-blue-500/20
+"
     >
       {tech}
     </span>
@@ -169,19 +191,28 @@ export default function Projects() {
     target="_blank"
     rel="noopener noreferrer"
     className="
-      inline-flex
-      items-center
-      gap-2
-      px-4
-      py-2
-      mt-4
-      rounded-xl
-      border
-      border-slate-600
-      hover:border-cyan-400
-      hover:text-cyan-400
-      transition
-    "
+  inline-flex
+  items-center
+  gap-2
+
+  px-4
+  py-2
+  mt-4
+
+  rounded-xl
+
+  border
+  border-slate-300
+  dark:border-slate-600
+
+  text-slate-700
+  dark:text-slate-300
+
+  hover:border-cyan-500
+  hover:text-cyan-500
+
+  transition
+"
   >
     <FaGithub />
   </a>

@@ -122,11 +122,11 @@ export default function Skills() {
           MY EXPERTISE
         </p>
 
-        <h2 className="text-5xl font-bold">
+        <h2 className="text-5xl font-bold text-slate-900 dark:text-white">
           Skills & Technologies
         </h2>
 
-        <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+       <p className="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">
           Technical skills, development tools,
           research technologies, and professional
           competencies acquired through projects,
@@ -139,19 +139,28 @@ export default function Skills() {
           <div
             key={index}
             className="
-              bg-slate-900/60
-              backdrop-blur-lg
-              border
-              border-slate-700
-              rounded-3xl
-              p-6
-              hover:border-blue-500
-              hover:shadow-[0_0_25px_rgba(59,130,246,0.25)]
-              transition-all
-              duration-300
-            "
-          >
-            <h3 className="text-xl font-bold text-blue-400 mb-4">
+  bg-white/95
+  dark:bg-slate-900/60
+
+  backdrop-blur-lg
+
+  border
+  border-slate-200
+  dark:border-slate-700
+
+  rounded-3xl
+  p-6
+
+  shadow-[0_8px_30px_rgba(0,0,0,0.08)]
+
+  hover:border-blue-500
+  hover:-translate-y-1
+  hover:shadow-[0_12px_40px_rgba(59,130,246,0.15)]
+
+  transition-all
+  duration-300
+">
+           <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-4">
               {category.title}
             </h3>
 
@@ -160,15 +169,22 @@ export default function Skills() {
                 <span
                   key={i}
                   className="
-                    bg-blue-500/10
-                    text-blue-400
-                    px-3
-                    py-1
-                    rounded-full
-                    text-sm
-                    border
-                    border-blue-500/20
-                  "
+  bg-blue-50
+  dark:bg-blue-500/10
+
+  text-blue-700
+  dark:text-blue-400
+
+  px-3
+  py-1
+
+  rounded-full
+  text-sm
+
+  border
+  border-blue-100
+  dark:border-blue-500/20
+"
                 >
                   {skill}
                 </span>
