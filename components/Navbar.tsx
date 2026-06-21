@@ -210,7 +210,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#about" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-blue-400 transition
+  hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
@@ -219,7 +219,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#research" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-blue-400 transition
+  hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]">
     Research Focus
@@ -228,7 +228,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#skills" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-blue-400 transition
+  hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
@@ -237,7 +237,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#experience" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-blue-400 transition
+  hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
@@ -247,7 +247,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#projects" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-blue-400 transition
+  hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
@@ -257,7 +257,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#publications" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-blue-400 transition
+  hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
@@ -267,7 +267,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#contact" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-blue-400 transition
+  hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
