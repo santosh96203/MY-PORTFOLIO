@@ -158,7 +158,7 @@ export default function Navbar() {
       {menuOpen && (
          <>
     <div
-      className="fixed inset-0 z-40 bg-black/40 z-40 md:hidden"
+      className="fixed inset-0 z-40 bg-black/40 md:hidden"
       onClick={() => setMenuOpen(false)}
     />
         <div
@@ -205,11 +205,12 @@ shadow-[0_0_10px_#00e5ff]
 
           </div>
 
-          <div className="hover:text-blue-400 transition">
+          <div className="flex flex-col gap-4 mt-4">
 
             <a href="#about" 
             onClick={() => setMenuOpen(false)}
-            className="
+            className="3
+            block
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -219,6 +220,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#research" 
             onClick={() => setMenuOpen(false)}
             className="
+            block
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]">
@@ -228,6 +230,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#skills" 
             onClick={() => setMenuOpen(false)}
             className="
+            block 
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -237,6 +240,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#experience" 
             onClick={() => setMenuOpen(false)}
             className="
+            block
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -247,6 +251,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#projects" 
             onClick={() => setMenuOpen(false)}
             className="
+            block
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -257,6 +262,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#publications" 
             onClick={() => setMenuOpen(false)}
             className="
+            block
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -267,6 +273,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#contact" 
             onClick={() => setMenuOpen(false)}
             className="
+            block
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
