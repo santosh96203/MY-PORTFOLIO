@@ -166,14 +166,14 @@ export default function Navbar() {
         fixed
         top-24
         left-4
-        w-72
+        w-72 max-h-[70vh] overflow-y-auto
         rounded-3xl
         bg-slate-900/95
         backdrop-blur-xl
         border
         border-cyan-500/20
         shadow-[0_0_30px_rgba(6,182,212,.15)]
-        p-5
+        p-4
         md:hidden
         z-50
       "
@@ -205,12 +205,13 @@ shadow-[0_0_10px_#00e5ff]
 
           </div>
 
-          <div className="flex flex-col gap-4 mt-4">
+          <div className="flex flex-col gap-4 mt-4 text-white text-lg">
 
             <a href="#about" 
             onClick={() => setMenuOpen(false)}
             className="3
             block
+            text-white
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -221,6 +222,7 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
             block
+            text-white
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]">
@@ -231,6 +233,7 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
             block 
+            text-white
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -241,6 +244,7 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
             block
+            text-white
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -252,6 +256,7 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
             block
+            text-white
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -263,6 +268,7 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
             block
+            text-white
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
@@ -274,6 +280,7 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
             block
+            text-white
   hover:text-blue-400
   transition
   hover:drop-shadow-[0_0_10px_#00e5ff]
