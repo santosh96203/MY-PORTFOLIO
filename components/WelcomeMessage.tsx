@@ -10,49 +10,36 @@ export default function WelcomeMessage({
   const [greeting, setGreeting] =
     useState("");
 
-  const [message, setMessage] =
-    useState("");
-  
   const [glowColor, setGlowColor] =
     useState("#ffffff");
 
   useEffect(() => {
     const hour = new Date().getHours();
 
-    const commonMessage =
-      "Welcome. Explore research, engineering projects, publications, and technical expertise.";
-
     if (hour >= 5 && hour < 12) {
-  setGreeting("Good Morning ☀️");
-  setGlowColor("#FFD54F"); // Morning yellow
-
-} else if (hour >= 12 && hour < 17) {
-  setGreeting("Good Afternoon 🌤️");
-  setGlowColor("#FFB300"); // Afternoon gold
-
-} else if (hour >= 17 && hour < 21) {
-  setGreeting("Good Evening 🌇");
-  setGlowColor("#FF7043"); // Sunset orange
-
-} else {
-  setGreeting("Good Night 🌙");
-  setGlowColor("#FFFFFF"); // White moonlight
-}
-
-    setMessage(commonMessage);
+      setGreeting("Good Morning ☀️");
+      setGlowColor("#FFD54F");
+    } else if (hour >= 12 && hour < 17) {
+      setGreeting("Good Afternoon 🌤️");
+      setGlowColor("#FFB300");
+    } else if (hour >= 17 && hour < 21) {
+      setGreeting("Good Evening 🌇");
+      setGlowColor("#FF7043");
+    } else {
+      setGreeting("Good Night 🌙");
+      setGlowColor("#C4D7FF");
+    }
   }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       onFinish();
-    }, 4000);
+    }, 4500);
 
     return () => clearTimeout(timer);
   }, [onFinish]);
-  const textColor =
-  glowColor === "#FFFFFF"
-    ? "#F8FAFC"
-    : glowColor;
+
+  const textColor = glowColor;
 
   return (
     <div
@@ -65,54 +52,64 @@ export default function WelcomeMessage({
       justify-center
       bg-white
       dark:bg-slate-950
-      animate-fadeIn
+      animate-welcomeFade
       "
     >
       <div
         className="
         text-center
-        px-8
-        py-8
+        px-10
+        py-10
         rounded-3xl
-        bg-white/70
-        dark:bg-slate-900/70
+        bg-white/80
+        dark:bg-slate-900/80
         backdrop-blur-md
         border
-        border-white/10
-        shadow-[0_0_40px_rgba(255,255,255,0.08)]
+        border-cyan-500/20
+        shadow-[0_0_40px_rgba(34,211,238,0.15)]
         "
       >
-        <h1
+        <h2
           className="
-          text-4xl
-          md:text-5xl
-          lg:text-6xl
-          font-bold
-          mb-4
+          text-3xl
+          md:text-4xl
+          font-semibold
+          mb-3
           "
           style={{
-  color: textColor,
-  textShadow: `
-    0 0 10px ${glowColor},
-    0 0 20px ${glowColor},
-    0 0 40px ${glowColor}
-  `,
-}}
+            color: textColor,
+            textShadow: `
+              0 0 10px ${glowColor},
+              0 0 20px ${glowColor},
+              0 0 40px ${glowColor}
+            `,
+          }}
         >
           {greeting}
+        </h2>
+
+        <h1
+          className="
+          text-5xl
+          md:text-6xl
+          font-extrabold
+          text-slate-900
+          dark:text-white
+          mb-4
+          "
+        >
+          Welcome to VSSR
         </h1>
 
         <p
           className="
-          text-base
-          md:text-lg
-          text-slate-800
-          dark:text-slate-200
+          text-lg
+          text-slate-700
+          dark:text-slate-300
           tracking-wide
-          font-medium
           "
         >
-          {message}
+          Explore. Learn. Connect.
         </p>
       </div>
     </div>

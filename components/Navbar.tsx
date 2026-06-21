@@ -205,41 +205,33 @@ shadow-[0_0_10px_#00e5ff]
 
           </div>
 
-          <div className="flex flex-col mt-4">
+          <div className="hover:text-blue-400 transition">
 
             <a href="#about" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-cyan-400
-  transition
-  hover:drop-shadow-[0_0_10px_#00e5ff]
+  hover:text-blue-400 transition
 ">
               About
             </a>
             <a href="#research" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-cyan-400
-  transition
-  hover:drop-shadow-[0_0_10px_#00e5ff]">
+  hover:text-blue-400 transition">
     Research Focus
   </a>
 
             <a href="#skills" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-cyan-400
-  transition
-  hover:drop-shadow-[0_0_10px_#00e5ff]
+  hover:text-blue-400 transition
 ">
               Skills & Technology
             </a>
             <a href="#experience" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-cyan-400
-  transition
-  hover:drop-shadow-[0_0_10px_#00e5ff]
+  hover:text-blue-400 transition
 ">
   Internships & Experience
 </a>
@@ -247,9 +239,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#projects" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-cyan-400
-  transition
-  hover:drop-shadow-[0_0_10px_#00e5ff]
+  hover:text-blue-400 transition
 ">
               Projects
             </a>
@@ -257,9 +247,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#publications" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-cyan-400
-  transition
-  hover:drop-shadow-[0_0_10px_#00e5ff]
+  hover:text-blue-400 transition
 ">
               Publications
             </a>
@@ -267,9 +255,7 @@ shadow-[0_0_10px_#00e5ff]
             <a href="#contact" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-cyan-400
-  transition
-  hover:drop-shadow-[0_0_10px_#00e5ff]
+  hover:text-blue-400 transition
 ">
               Contact
             </a>
