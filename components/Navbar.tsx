@@ -211,13 +211,17 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
   hover:text-blue-400 transition
+  transition
+  hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
               About
             </a>
             <a href="#research" 
             onClick={() => setMenuOpen(false)}
             className="
-  hover:text-blue-400 transition">
+  hover:text-blue-400 transition
+  transition
+  hover:drop-shadow-[0_0_10px_#00e5ff]">
     Research Focus
   </a>
 
@@ -225,6 +229,8 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
   hover:text-blue-400 transition
+  transition
+  hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
               Skills & Technology
             </a>
@@ -232,6 +238,8 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
   hover:text-blue-400 transition
+  transition
+  hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
   Internships & Experience
 </a>
@@ -240,6 +248,8 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
   hover:text-blue-400 transition
+  transition
+  hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
               Projects
             </a>
@@ -248,6 +258,8 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
   hover:text-blue-400 transition
+  transition
+  hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
               Publications
             </a>
@@ -256,6 +268,8 @@ shadow-[0_0_10px_#00e5ff]
             onClick={() => setMenuOpen(false)}
             className="
   hover:text-blue-400 transition
+  transition
+  hover:drop-shadow-[0_0_10px_#00e5ff]
 ">
               Contact
             </a>
