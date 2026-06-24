@@ -71,7 +71,7 @@ export default function Navbar() {
   </span>
 
  {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="lg:hidden lg:flex items-center gap-8">
 
             <a href="#about" className="hover:text-blue-400 transition">
               About
@@ -107,7 +107,7 @@ export default function Navbar() {
     <button
       onClick={() => setMenuOpen((prev) => !prev)}
       className="
-        md:hidden
+        lg:hidden
         flex
         items-center
         gap-2
@@ -158,7 +158,7 @@ export default function Navbar() {
       {menuOpen && (
          <>
     <div
-      className="fixed inset-0 z-40 bg-black/40 md:hidden"
+      className="fixed inset-0 z-40 bg-black/40 lg:hidden"
       onClick={() => setMenuOpen(false)}
     />
         <div
@@ -174,7 +174,7 @@ export default function Navbar() {
         border-cyan-500/20
         shadow-[0_0_30px_rgba(6,182,212,.15)]
         p-4
-        md:hidden
+        lg:hidden
         z-50
       "
         >
